@@ -112,7 +112,29 @@ form {
   text-transform: uppercase;
   min-width: 15.8rem;
 }
+.primary{
+  background-color: var(--color-produto-purple-mid);
+  color: var(--color-base-white);
+}
+.secondary{
+  background-color: var(--color-base-white);
+  color: var(--color-produto-purple-mid);
+  border: 1px solid var(--color-produto-purple-mid);
+}
 
 .justify-end{
   justify-content: flex-end;
+}
+
+label{
+  font-weight:700;
+  color: var(--color-base-gray-400);
+}
+input, textarea{
+  width: 100%;
+  margin-top: 4px ;
+  padding: 1.6rem;
+  background-color: var(--color-base-white);
+  border: 1px solid var(--color-base-gray-100);
+  border-radius: .2rem;
 }
