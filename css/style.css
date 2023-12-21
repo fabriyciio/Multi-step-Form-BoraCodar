@@ -98,6 +98,7 @@ form {
 .button-wrapper{
   margin-top: 3.2rem;
   display: flex;
+  justify-content: space-between;
 }
 .btn{
   display:flex;
@@ -112,9 +113,9 @@ form {
   text-transform: uppercase;
   min-width: 15.8rem;
 }
-.primary{
+.primary:hover{
   background-color: var(--color-produto-purple-mid);
-  color: var(--color-base-white);
+ 
 }
 .secondary{
   background-color: var(--color-base-white);
@@ -137,4 +138,10 @@ input, textarea{
   background-color: var(--color-base-white);
   border: 1px solid var(--color-base-gray-100);
   border-radius: .2rem;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color: var(--color-base-gray-200);
+  
 }

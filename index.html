@@ -35,20 +35,62 @@
             <label for="name">Nome</label>
             <input id="name" name="name" type="text" placeholder="Como Prefere ser chamado" required>
           </div>
-            <div class="input-wrapper">
-              <label for="phone">Telefone</label>
-              <input id="phone" name="phone" type="text" placeholder="Digite seu whatsapp" ankeypress="return /\d/.test(event.key)">
-            </div>
-            <div class="input-wrapper">
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="text" placeholder="Digite seu E-mail" required>
-            </div>
+          <div class="input-wrapper">
+            <label for="phone">Telefone</label>
+            <input id="phone" name="phone" type="text" placeholder="Digite seu whatsapp"
+              ankeypress="return /\d/.test(event.key)">
+          </div>
+          <div class="input-wrapper">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="Digite seu E-mail" required>
+          </div>
         </div>
 
         <div class="button-wrapper justify-end">
-          <button class="btn primary">CONTINUAR</button>
+          <button class="btn primary" type="button">CONTINUAR</button>
         </div>
 
+        <div class="form-step">
+          <div class="content">
+            <div class="input-wrapper">
+              <label for="business-name">Nome da empresa</label>
+              <input id="business-name" name="business-name" type="text" placeholder="Qual nome da empresa" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="business-colab-number">Numeros de Funcionarios</label>
+              <input id="business-colab-number" name="business-colab-number" type="text"
+                placeholder="Digite seu whatsapp" ankeypress="return /\d/.test(event.key)">
+            </div>
+            <div class="input-wrapper">
+              <label for="business-about">Sobre seu Negocios</label>
+              <textarea>
+              <input
+               id="business-about"
+               name="business-about" 
+             placeholder="fale sobre seu negocio"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn secondary" type="button">VOLTAR</button>
+          <button class="btn primary" type="button">CONTINUAR</button>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="content">
+          <div class="input-wrapper">
+            <label for="project">Objetivo do projeto</label>
+            <textarea>
+                        <input
+                         id="project"
+                         name="project" 
+                       placeholder="Descreva Quis objetivos do pro"></textarea>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn secondary">VOLTAR</button>
+            <button class="btn primary" type="submit">ENVIAR RESPOSTA</button>
+          </div>
+        </div>
       </div>
     </form>
   </main>
